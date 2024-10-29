@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Canva with Layer Controls</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fabric.js Library for Canvas Manipulation -->
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <button id="uploadButton">Upload Image</button>
+            <input type="file" id="imageInput" accept="image/*" style="display:none;">
+            
+            <!-- Predefined Elements in a 2x2 Grid -->
+            <div class="predefined-elements">
+                <img src="cap.png" alt="Cap" class="element" id="cap">
+                <img src="glasses.png" alt="Glasses" class="element" id="glasses">
+                <img src="goldchain.png" alt="Gold Chain" class="element" id="goldchain">
+                <img src="cigar.png" alt="Cigar" class="element" id="cigar">
+            </div>
+        </div>
+
+        <!-- Top Panel for Text Controls -->
+        <div class="top-panel">
+            <label for="fontSelect">Font:</label>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Tahoma">Tahoma</option>
+            </select>
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker">
+            <button id="bringToFront">Bring to Front</button>
+            <button id="bringForward">Bring Forward</button>
+            <button id="sendBackward">Send Backward</button>
+            <button id="sendToBack">Send to Back</button>
+            <button id="downloadButton">Download Image</button>
+        </div>
+
+        <!-- Canvas Container -->
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <!-- JavaScript for the application -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
