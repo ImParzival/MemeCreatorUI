@@ -1,5 +1,5 @@
 # MemeCreatorUI
-Graphical Editor for Crypto Memes
-> npm install -g http-server
-> http-server
-> open http://localhost:8080
+How to execute the project?
+<pre>npm install -g http-server</pre>
+<pre>http-server</pre>
+<pre>open http://localhost:8080</pre>
